@@ -14,12 +14,14 @@ Then you can use whatever tools are included.
 
 ## Included tools
 
-| Name   | Version     |
-| -------|-------------|
-| CMake  | [3.10.2][1] |
-| MinGW  | [7.2.0][2]  |
-| Python | [3.6.4][3]  |
+| Name      | Version     |
+| ----------|-------------|
+| CMake     | [3.10.2][1] |
+| Mercurial | [4.5.2][2]  |
+| MinGW     | [7.2.0][3]  |
+| Python    | [3.6.4][4]  |
 
 [1]: https://cmake.org/files/v3.10/cmake-3.10.2-win32-x86.zip
-[2]: https://downloads.sourceforge.net/project/mingw-w64/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/7.2.0/threads-posix/dwarf/i686-7.2.0-release-posix-dwarf-rt_v5-rev1.7z
-[3]: https://www.python.org/ftp/python/3.6.4/python-3.6.4-embed-win32.zip
+[2]: https://www.mercurial-scm.org/release/windows/mercurial-4.5.2-x86.msi
+[3]: https://downloads.sourceforge.net/project/mingw-w64/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/7.2.0/threads-posix/dwarf/i686-7.2.0-release-posix-dwarf-rt_v5-rev1.7z
+[4]: https://www.python.org/ftp/python/3.6.4/python-3.6.4-embed-win32.zip
