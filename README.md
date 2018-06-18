@@ -25,3 +25,12 @@ Then you can use whatever tools are included.
 [2]: https://www.mercurial-scm.org/release/windows/mercurial-4.5.2-x86.msi
 [3]: https://downloads.sourceforge.net/project/mingw-w64/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/7.2.0/threads-posix/dwarf/i686-7.2.0-release-posix-dwarf-rt_v5-rev1.7z
 [4]: https://www.python.org/ftp/python/3.6.4/python-3.6.4-embed-win32.zip
+
+## Licenses
+
+All included tools are distributed under their respective licenses:
+
+* CMake is distributed under a 3-clause BSD License; see `cmake/doc/cmake/Copyright.txt`.
+* Mercurial is distributed under the GNU General Public License, version 2 or later; see `mercurial/COPYING.rtf`.
+* MinGW is distributed under several different licenses; see `mingw/licenses/`.
+* Python is distributed under the Python Software Foundation License; see https://docs.python.org/3/license.html.
