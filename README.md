@@ -30,7 +30,7 @@ Then you can use whatever tools are included.
 
 All included tools are distributed under their respective licenses:
 
-* CMake is distributed under a 3-clause BSD License; see `cmake/doc/cmake/Copyright.txt`.
-* Mercurial is distributed under the GNU General Public License, version 2 or later; see `mercurial/COPYING.rtf`.
-* MinGW is distributed under several different licenses; see `mingw/licenses/`.
+* CMake is distributed under a 3-clause BSD License; see [cmake/doc/cmake/Copyright.txt](cmake/doc/cmake/Copyright.txt).
+* Mercurial is distributed under the GNU General Public License, version 2 or later; see [mercurial/COPYING.rtf](mercurial/COPYING.rtf).
+* MinGW is distributed under several different licenses; see [mingw/licenses/](mingw/licenses/).
 * Python is distributed under the Python Software Foundation License; see https://docs.python.org/3/license.html.
