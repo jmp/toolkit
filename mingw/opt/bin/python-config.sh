@@ -40,7 +40,7 @@ installed_prefix ()
     echo $RESULT
 }
 
-prefix_build="/c/mingw720/i686-720-posix-dwarf-rt_v5-rev1/mingw32/opt"
+prefix_build="/c/mingw810/x86_64-810-posix-seh-rt_v6-rev0/mingw64/opt"
 prefix_real=$(installed_prefix "$0")
 
 # Use sed to fix paths from their built to locations to their installed to locations.
@@ -49,7 +49,7 @@ exec_prefix_build="${prefix}"
 exec_prefix=$(echo "$exec_prefix_build" | sed "s#$exec_prefix_build#$prefix_real#")
 includedir=$(echo "${prefix}/include" | sed "s#$prefix_build#$prefix_real#")
 libdir=$(echo "${exec_prefix}/lib" | sed "s#$prefix_build#$prefix_real#")
-CFLAGS=$(echo "-O2 -pipe -fno-ident -I/c/mingw720/i686-720-posix-dwarf-rt_v5-rev1/mingw32/opt/include -I/c/mingw720/prerequisites/i686-zlib-static/include -I/c/mingw720/prerequisites/i686-w64-mingw32-static/include -fwrapv -DNDEBUG -D__USE_MINGW_ANSI_STDIO=1" | sed "s#$prefix_build#$prefix_real#")
+CFLAGS=$(echo "-O2 -pipe -fno-ident -I/c/mingw810/x86_64-810-posix-seh-rt_v6-rev0/mingw64/opt/include -I/c/mingw810/prerequisites/x86_64-zlib-static/include -I/c/mingw810/prerequisites/x86_64-w64-mingw32-static/include -fwrapv -DNDEBUG -D__USE_MINGW_ANSI_STDIO=1" | sed "s#$prefix_build#$prefix_real#")
 VERSION="2.7"
 LIBM="-lm"
 LIBC=""

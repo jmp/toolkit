@@ -1,7 +1,7 @@
 /* gdbm.h  -  The include file for dbm users.  -*- c -*- */
 
 /*  This file is part of GDBM, the GNU data base manager, by Philip A. Nelson.
-    Copyright (C) 1990-1991, 1993, 2011, 2016-2017 Free Software
+    Copyright (C) 1990-1991, 1993, 2011, 2016-2018 Free Software
     Foundation, Inc.
 
     GDBM is free software; you can redistribute it and/or modify
@@ -102,8 +102,8 @@ typedef struct gdbm_file_info *GDBM_FILE;
 extern const char *gdbm_version;	
 
 # define GDBM_VERSION_MAJOR 1
-# define GDBM_VERSION_MINOR 13
-# define GDBM_VERSION_PATCH 0
+# define GDBM_VERSION_MINOR 14
+# define GDBM_VERSION_PATCH 1
 
 extern int const gdbm_version_number[3];
 
@@ -224,10 +224,11 @@ extern int gdbm_copy_meta (GDBM_FILE dst, GDBM_FILE src);
 # define _GDBM_MAX_ERRNO	GDBM_DIR_OVERFLOW
 
 /* This one was never used and will be removed in the future */
-# define GDBM_UNKNOWN_UPDATE GDBM_ERR_UNKNOWN_ERROR
+# define GDBM_UNKNOWN_UPDATE GDBM_UNKNOWN_ERROR
   
 typedef int gdbm_error;
-extern gdbm_error gdbm_errno;
+extern int *gdbm_errno_location (void);
+#define gdbm_errno (*gdbm_errno_location ())
 extern const char * const gdbm_errlist[];
 extern int const gdbm_syserr[];
   

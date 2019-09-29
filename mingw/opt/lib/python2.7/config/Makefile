@@ -28,13 +28,13 @@ MODLIBS=        $(LOCALMODLIBS) $(BASEMODLIBS)
 VERSION=	2.7
 srcdir=		../../../src/Python-2.7.9
 VPATH=		../../../src/Python-2.7.9
-abs_srcdir=	/c/mingw720/i686-720-posix-dwarf-rt_v5-rev1/build/Python-2.7.9/../../../src/Python-2.7.9
-abs_builddir=	/c/mingw720/i686-720-posix-dwarf-rt_v5-rev1/build/Python-2.7.9
-build=		i686-w64-mingw32
-host=		i686-w64-mingw32
+abs_srcdir=	/c/mingw810/x86_64-810-posix-seh-rt_v6-rev0/build/Python-2.7.9/../../../src/Python-2.7.9
+abs_builddir=	/c/mingw810/x86_64-810-posix-seh-rt_v6-rev0/build/Python-2.7.9
+build=		x86_64-w64-mingw32
+host=		x86_64-w64-mingw32
 
-CC=		i686-w64-mingw32-gcc
-CXX=		i686-w64-mingw32-c++
+CC=		x86_64-w64-mingw32-gcc
+CXX=		x86_64-w64-mingw32-c++
 MAINCC=		$(CC)
 LINKCC=		$(PURIFY) $(MAINCC)
 AR=		ar
@@ -69,12 +69,12 @@ MAKESETUP=      $(srcdir)/Modules/makesetup
 # Compiler options
 OPT=		-DNDEBUG 
 BASECFLAGS=	 -fno-strict-aliasing
-CFLAGS=		$(BASECFLAGS) -O2 -pipe -fno-ident -I/c/mingw720/i686-720-posix-dwarf-rt_v5-rev1/mingw32/opt/include -I/c/mingw720/prerequisites/i686-zlib-static/include -I/c/mingw720/prerequisites/i686-w64-mingw32-static/include -fwrapv -DNDEBUG -D__USE_MINGW_ANSI_STDIO=1 $(OPT) $(EXTRA_CFLAGS)
+CFLAGS=		$(BASECFLAGS) -O2 -pipe -fno-ident -I/c/mingw810/x86_64-810-posix-seh-rt_v6-rev0/mingw64/opt/include -I/c/mingw810/prerequisites/x86_64-zlib-static/include -I/c/mingw810/prerequisites/x86_64-w64-mingw32-static/include -fwrapv -DNDEBUG -D__USE_MINGW_ANSI_STDIO=1 $(OPT) $(EXTRA_CFLAGS)
 # Both CPPFLAGS and LDFLAGS need to contain the shell's value for setup.py to
 # be able to build extension modules using the directories specified in the
 # environment variables
-CPPFLAGS=	-I. -IInclude -I$(srcdir)/Include -I$(srcdir)/Python -I$(srcdir)/PC  -I/c/mingw720/i686-720-posix-dwarf-rt_v5-rev1/mingw32/opt/include -I/c/mingw720/prerequisites/i686-zlib-static/include -I/c/mingw720/prerequisites/i686-w64-mingw32-static/include -IC:/mingw720/i686-720-posix-dwarf-rt_v5-rev1/mingw32/opt/include -IC:/mingw720/i686-720-posix-dwarf-rt_v5-rev1/mingw32/opt/include/ncursesw -IC:/mingw720/prerequisites/i686-zlib-static/include
-LDFLAGS=	-pipe -fno-ident -L/c/mingw720/i686-720-posix-dwarf-rt_v5-rev1/mingw32/opt/lib -L/c/mingw720/prerequisites/i686-zlib-static/lib -L/c/mingw720/prerequisites/i686-w64-mingw32-static/lib -LC:/mingw720/prerequisites/i686-zlib-static/lib -LC:/mingw720/i686-720-posix-dwarf-rt_v5-rev1/mingw32/opt/lib
+CPPFLAGS=	-I. -IInclude -I$(srcdir)/Include -I$(srcdir)/Python -I$(srcdir)/PC  -I/c/mingw810/x86_64-810-posix-seh-rt_v6-rev0/mingw64/opt/include -I/c/mingw810/prerequisites/x86_64-zlib-static/include -I/c/mingw810/prerequisites/x86_64-w64-mingw32-static/include -IC:/mingw810/x86_64-810-posix-seh-rt_v6-rev0/mingw64/opt/include -IC:/mingw810/x86_64-810-posix-seh-rt_v6-rev0/mingw64/opt/include/ncursesw -IC:/mingw810/prerequisites/x86_64-zlib-static/include
+LDFLAGS=	-pipe -fno-ident -L/c/mingw810/x86_64-810-posix-seh-rt_v6-rev0/mingw64/opt/lib -L/c/mingw810/prerequisites/x86_64-zlib-static/lib -L/c/mingw810/prerequisites/x86_64-w64-mingw32-static/lib -LC:/mingw810/prerequisites/x86_64-zlib-static/lib -LC:/mingw810/x86_64-810-posix-seh-rt_v6-rev0/mingw64/opt/lib
 LDLAST=		
 SGI_ABI=	
 CCSHARED=	
@@ -94,7 +94,7 @@ MACHDEP=	win32
 MULTIARCH=	
 
 # Install prefix for architecture-independent files
-prefix=		/c/mingw720/i686-720-posix-dwarf-rt_v5-rev1/mingw32/opt
+prefix=		/c/mingw810/x86_64-810-posix-seh-rt_v6-rev0/mingw64/opt
 
 # Install prefix for architecture-dependent files
 exec_prefix=	${prefix}
@@ -103,11 +103,11 @@ exec_prefix=	${prefix}
 datarootdir=    ${prefix}/share
 
 # Locations needed for semi-native fixup of sysconfig.
-srcdir_b2h=		C:/mingw720/src/Python-2.7.9
-VPATH_b2h=		C:/mingw720/src/Python-2.7.9
-abs_srcdir_b2h=		C:/mingw720/src/Python-2.7.9
-abs_builddir_b2h=	C:/mingw720/i686-720-posix-dwarf-rt_v5-rev1/build/Python-2.7.9
-prefix_b2h=		C:/mingw720/i686-720-posix-dwarf-rt_v5-rev1/mingw32/opt
+srcdir_b2h=		C:/mingw810/src/Python-2.7.9
+VPATH_b2h=		C:/mingw810/src/Python-2.7.9
+abs_srcdir_b2h=		C:/mingw810/src/Python-2.7.9
+abs_builddir_b2h=	C:/mingw810/x86_64-810-posix-seh-rt_v6-rev0/build/Python-2.7.9
+prefix_b2h=		C:/mingw810/x86_64-810-posix-seh-rt_v6-rev0/mingw64/opt
 
 # Expanded directories
 BINDIR=		${exec_prefix}/bin
@@ -163,7 +163,7 @@ EXEMODE=	755
 FILEMODE=	644
 
 # configure script arguments
-CONFIG_ARGS=	 '--host=i686-w64-mingw32' '--build=i686-w64-mingw32' '--prefix=/c/mingw720/i686-720-posix-dwarf-rt_v5-rev1/mingw32/opt' '--enable-shared' '--with-threads' '--with-system-expat' '--with-system-ffi' 'LIBFFI_INCLUDEDIR=C:/mingw720/i686-720-posix-dwarf-rt_v5-rev1/mingw32/opt/lib/libffi-3.2.1/include' 'OPT=' 'CFLAGS=-O2 -pipe -fno-ident -I/c/mingw720/i686-720-posix-dwarf-rt_v5-rev1/mingw32/opt/include -I/c/mingw720/prerequisites/i686-zlib-static/include -I/c/mingw720/prerequisites/i686-w64-mingw32-static/include -fwrapv -DNDEBUG -D__USE_MINGW_ANSI_STDIO=1' 'CPPFLAGS= -I/c/mingw720/i686-720-posix-dwarf-rt_v5-rev1/mingw32/opt/include -I/c/mingw720/prerequisites/i686-zlib-static/include -I/c/mingw720/prerequisites/i686-w64-mingw32-static/include -IC:/mingw720/i686-720-posix-dwarf-rt_v5-rev1/mingw32/opt/include -IC:/mingw720/i686-720-posix-dwarf-rt_v5-rev1/mingw32/opt/include/ncursesw -IC:/mingw720/prerequisites/i686-zlib-static/include' 'LDFLAGS=-pipe -fno-ident -L/c/mingw720/i686-720-posix-dwarf-rt_v5-rev1/mingw32/opt/lib -L/c/mingw720/prerequisites/i686-zlib-static/lib -L/c/mingw720/prerequisites/i686-w64-mingw32-static/lib -LC:/mingw720/prerequisites/i686-zlib-static/lib -LC:/mingw720/i686-720-posix-dwarf-rt_v5-rev1/mingw32/opt/lib' 'build_alias=i686-w64-mingw32' 'host_alias=i686-w64-mingw32'
+CONFIG_ARGS=	 '--host=x86_64-w64-mingw32' '--build=x86_64-w64-mingw32' '--prefix=/c/mingw810/x86_64-810-posix-seh-rt_v6-rev0/mingw64/opt' '--enable-shared' '--with-threads' '--with-system-expat' '--with-system-ffi' 'LIBFFI_INCLUDEDIR=C:/mingw810/x86_64-810-posix-seh-rt_v6-rev0/mingw64/opt/lib/libffi-3.2.1/include' 'OPT=' 'CFLAGS=-O2 -pipe -fno-ident -I/c/mingw810/x86_64-810-posix-seh-rt_v6-rev0/mingw64/opt/include -I/c/mingw810/prerequisites/x86_64-zlib-static/include -I/c/mingw810/prerequisites/x86_64-w64-mingw32-static/include -fwrapv -DNDEBUG -D__USE_MINGW_ANSI_STDIO=1' 'CPPFLAGS= -I/c/mingw810/x86_64-810-posix-seh-rt_v6-rev0/mingw64/opt/include -I/c/mingw810/prerequisites/x86_64-zlib-static/include -I/c/mingw810/prerequisites/x86_64-w64-mingw32-static/include -IC:/mingw810/x86_64-810-posix-seh-rt_v6-rev0/mingw64/opt/include -IC:/mingw810/x86_64-810-posix-seh-rt_v6-rev0/mingw64/opt/include/ncursesw -IC:/mingw810/prerequisites/x86_64-zlib-static/include' 'LDFLAGS=-pipe -fno-ident -L/c/mingw810/x86_64-810-posix-seh-rt_v6-rev0/mingw64/opt/lib -L/c/mingw810/prerequisites/x86_64-zlib-static/lib -L/c/mingw810/prerequisites/x86_64-w64-mingw32-static/lib -LC:/mingw810/prerequisites/x86_64-zlib-static/lib -LC:/mingw810/x86_64-810-posix-seh-rt_v6-rev0/mingw64/opt/lib' 'build_alias=x86_64-w64-mingw32' 'host_alias=x86_64-w64-mingw32'
 
 
 # Subdirectories with code
@@ -206,7 +206,7 @@ BUILDPYTHON=	python$(BUILDEXE)
 
 PYTHON_FOR_BUILD=./$(BUILDPYTHON) -E
 _PYTHON_HOST_PLATFORM=
-HOST_GNU_TYPE=  i686-w64-mingw32
+HOST_GNU_TYPE=  x86_64-w64-mingw32
 
 # Tcl and Tk config info from --with-tcltk-includes and -libs options
 TCLTK_INCLUDES=	
@@ -254,7 +254,7 @@ GRAMMAR_C=	Python/graminit.c
 GRAMMAR_INPUT=	$(srcdir)/Grammar/Grammar
 
 
-LIBFFI_INCLUDEDIR=	C:/mingw720/i686-720-posix-dwarf-rt_v5-rev1/mingw32/opt/lib/libffi-3.2.1/include
+LIBFFI_INCLUDEDIR=	C:/mingw810/x86_64-810-posix-seh-rt_v6-rev0/mingw64/opt/lib/libffi-3.2.1/include
 
 ##########################################################################
 # Parser

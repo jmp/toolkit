@@ -1025,7 +1025,7 @@
 #define SIZEOF_LONG 4
 
 /* The size of `long double', as computed by sizeof. */
-#define SIZEOF_LONG_DOUBLE 12
+#define SIZEOF_LONG_DOUBLE 16
 
 /* The size of `long long', as computed by sizeof. */
 #define SIZEOF_LONG_LONG 8
@@ -1034,7 +1034,7 @@
 #define SIZEOF_OFF_T 4
 
 /* The size of `pid_t', as computed by sizeof. */
-#define SIZEOF_PID_T 4
+#define SIZEOF_PID_T 8
 
 /* The size of `pthread_t', as computed by sizeof. */
 /* #undef SIZEOF_PTHREAD_T */
@@ -1043,16 +1043,16 @@
 #define SIZEOF_SHORT 2
 
 /* The size of `size_t', as computed by sizeof. */
-#define SIZEOF_SIZE_T 4
+#define SIZEOF_SIZE_T 8
 
 /* The size of `time_t', as computed by sizeof. */
-#define SIZEOF_TIME_T 4
+#define SIZEOF_TIME_T 8
 
 /* The size of `uintptr_t', as computed by sizeof. */
-#define SIZEOF_UINTPTR_T 4
+#define SIZEOF_UINTPTR_T 8
 
 /* The size of `void *', as computed by sizeof. */
-#define SIZEOF_VOID_P 4
+#define SIZEOF_VOID_P 8
 
 /* The size of `wchar_t', as computed by sizeof. */
 #define SIZEOF_WCHAR_T 2
@@ -1157,7 +1157,7 @@
 #endif
 
 /* Define if arithmetic is subject to x87-style double rounding issue */
-#define X87_DOUBLE_ROUNDING 1
+/* #undef X87_DOUBLE_ROUNDING */
 
 /* Define on OpenBSD to activate all library features */
 /* #undef _BSD_SOURCE */
