@@ -16,20 +16,23 @@ Then you can use whatever tools are included.
 
 | Name      | Version     |
 | ----------|-------------|
-| CMake     | [3.10.2][1] |
-| Mercurial | [4.5.2][2]  |
-| MinGW     | [8.1.0][3]  |
-| Python    | [3.6.4][4]  |
+| 7-Zip     | [19.00][1]  |
+| CMake     | [3.10.2][2] |
+| Mercurial | [4.5.2][3]  |
+| MinGW     | [8.1.0][4]  |
+| Python    | [3.6.4][5]  |
 
-[1]: https://cmake.org/files/v3.10/cmake-3.10.2-win32-x86.zip
-[2]: https://www.mercurial-scm.org/release/windows/mercurial-4.5.2-x86.msi
-[3]: https://downloads.sourceforge.net/project/mingw-w64/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/8.1.0/threads-posix/seh/x86_64-8.1.0-release-posix-seh-rt_v6-rev0.7z
-[4]: https://www.python.org/ftp/python/3.6.4/python-3.6.4-embed-win32.zip
+[1]: https://7-zip.org/a/7z1900-extra.7z
+[2]: https://cmake.org/files/v3.10/cmake-3.10.2-win32-x86.zip
+[3]: https://www.mercurial-scm.org/release/windows/mercurial-4.5.2-x86.msi
+[4]: https://downloads.sourceforge.net/project/mingw-w64/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/8.1.0/threads-posix/seh/x86_64-8.1.0-release-posix-seh-rt_v6-rev0.7z
+[5]: https://www.python.org/ftp/python/3.6.4/python-3.6.4-embed-win32.zip
 
 ## Licenses
 
 All included tools are distributed under their respective licenses:
 
+* 7-Zip is distributed under the GNU Lesser General Public License, version 2.1 or later; see [7zip/License.txt](7zip/License.txt).
 * CMake is distributed under a 3-clause BSD License; see [cmake/doc/cmake/Copyright.txt](cmake/doc/cmake/Copyright.txt).
 * Mercurial is distributed under the GNU General Public License, version 2 or later; see [mercurial/COPYING.rtf](mercurial/COPYING.rtf).
 * MinGW is distributed under several different licenses; see [mingw/licenses/](mingw/licenses/).
